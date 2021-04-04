@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function Display() {
+            var id = (document.getElementById("id").value);
+            var name = (document.getElementById("name").value);
+            var batch = (document.getElementById("batch").value);
+            var address = (document.getElementById("address").value);
+            document.getElementById("display").innerHTML = "<p> Id:<b>" + id + "</b></br> Name: <b>" + name + "</b></br>  Address: <b>" + address + "</b></br> Batch:<b>" + batch + "</b></p>"
+        }
+
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Details</h1>
+    </div>
+    <form class="form-group">
+        <div class="container">
+            <label for="id">Id</label>
+            <input type="text" class="form-control" placeholder="Ennter Id" id="id" name="id">
+        </div>
+
+        <div class="container">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" placeholder="Enter Name" id="name" name="name">
+        </div>
+         <div class="container">
+            <label for="address">Address</label>
+			 <textarea class="form-control" rows="2" id="address" placeholder="Enter Address" name="address"></textarea>
+          </div>
+        <div class="container">
+            <label for="batch">Batch</label>
+            <input type="text" class="form-control" placeholder="Enter Batch" id="batch" name="batch">
+        </div>
+        
+
+        <div class="container">
+            <input type="button" class="btn btn-success" name="sumbit" value="Submit" onclick="Display()" />
+        </div>
+
+    </form>
+    <div id="display" class="container">
+    
+    </div>
+    <div class="container">
+        <h3>Table With Records</h3>
+		<table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Roll Number</th>
+      <th scope="col">Name</th>
+      <th scope="col">Marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Rishabh</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Govind</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Aayush</td>
+      <td>65</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</body>
+</html>
